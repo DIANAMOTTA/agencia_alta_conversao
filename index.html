@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="tailwind-build.css"><!--replace with path to your tailwind build-->
+        <link rel="stylesheet" href="tailwind-runtime.css"><!--replace with path to your tailwind runtime-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agência Alta Conversão</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.png"
+            type="image/x-icon"
+        />
+<style>
+    .whats { position: fixed; bottom: 30px; right: 30px; z-index: 9999;     }
+</style>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/DianaMotta" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-font-mono tw-min-h-[100vh] tw-flex-col tw-bg-[#181B20] tw-text-white">
+      
+
+        <header
+            class="lg:tw-justify-around tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] 
+                    tw-text-white"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href=""> Sobre nós </a>
+                    <a class="header-links" href="#pricing"> Nosso trabalho </a>
+
+  
+                  <!--  <a class="header-links" href=""> Features </a> /-->
+                   <!--  <a class="header-links" href=""> Company </a> -->
+                </div>
+
+                                  <!-- Rodapé -->
+                <!-- <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        aria-label="signup"
+                        class="tw-rounded-full tw-bg-secondary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Entre em contato</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div> / -->
+
+              
+  
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="hero-bg-gradient tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4  max-xl:tw-place-items-center"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up tw-text-center gradient-text tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Agência Alta Converção </span>
+                        <br />
+                        <span class=""> Resultados reais </span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full"
+                    >
+                    "Na Alta Conversão, transformamos visibilidade em resultados: social media, tráfego pago, vídeos e muito mais para sua marca crescer!"
+                      
+                    </div>
+
+                   <!-- <div
+                        class="reveal-up tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            Get started
+                        </a>
+                        <a
+                            class="btn !tw-bg-white !tw-text-secondary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            <span>Learn more</span>
+                        </a>
+                    </div>
+
+                </div> -->
+
+                <div
+                    class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container">
+                    
+                    <div
+                        class="tw-flex tw-max-h-[750px] tw-min-h-[450px] tw-w-full tw-min-w-[350px] tw-max-w-[950px] tw-rounded-2xl 
+                                    tw-overflow-hidden tw-shadow-xl tw-shadow-[#443e437c]
+                                    max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[150px] max-lg:tw-w-[320px]"
+                    id="dashboard">
+                        <img
+                            src="./assets/images/home/dashboard.png"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover  max-lg:tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-flex-col tw-w-full tw-max-w-[100vw] 
+                    tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl"> Utilizamos as melhores ferramentas do mercado</h2>
+
+            <div class="reveal-up carousel-container">
+                <div class="carousel tw-mt-6 tw-flex tw-w-full lg:w-place-content-center tw-gap-5 max-md:tw-gap-2">
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[40px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/Hostinger.png"
+                            alt="hostinger"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[40px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/shopify.png"
+                            alt="shopify"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[70px] tw-w-[190px]">
+                        <img
+                            src="./assets/images/brand-logos/wordpress.svg"
+                            alt="wordpress"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[70px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/digitalocean.png"
+                            alt="KingHost"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                 <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/typebot.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        /> 
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/KingHost-logo.png"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        /> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-min-h-[100vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                <h3 class="tw-text-xl tw-text-primary">
+                    Confira nossos Serviços
+                </h3>
+                <h2 class="tw-text-4xl tw-font-semibold">Nossos Serviços</h2>
+                <div
+                    class="tw-mt-6 tw-flex tw-flex-wrap tw-justify-center tw-gap-6 tw-w-full max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-auto tw-w-[350px] sm:tw-w-full tw-flex-col tw-gap-4 tw-p-4 tw-text-center tw-items-center tw-justify-center"
+                    >
+                        <i class="bi bi-rocket-fill tw-text-5xl sm:tw-text-4xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Anúncios Patrocinados</h3>
+                        <div class="tw-text-gray-300">
+                            Alcance seu público-alvo instantaneamente! Os anúncios patrocinados são uma forma eficaz de promover seu negócio online. Aumente a visibilidade e impulsione as vendas,
+                            aparecendo nos principais resultados de pesquisa do Google e Meta.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-auto tw-w-[350px] sm:tw-w-full tw-flex-col tw-gap-4 tw-p-4 tw-text-center tw-items-center tw-justify-center"
+                    >
+                        <i class="bi bi-share-fill tw-text-5xl sm:tw-text-4xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Social Mídia</h3>
+                        <div class="tw-text-gray-300">
+                            Oferecemos um serviço completo de marketing digital: planejamento e criação de conteúdo, agendamento de posts, monitoramento, interação com seguidores e análise de resultados.
+                            Com estratégias personalizadas, fortalecemos a presença online da sua marca e impulsionamos o engajamento com sua comunidade.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-auto tw-w-[350px] sm:tw-w-full tw-flex-col tw-gap-4 tw-p-4 tw-text-center tw-items-center tw-justify-center"
+                    >
+                        <i class="bi bi-globe tw-text-5xl sm:tw-text-4xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Sites Profissionais</h3>
+                        <div class="tw-text-gray-300">
+                            Destaque-se online! Um site profissional é sua vitrine digital, transmitindo credibilidade e confiança aos clientes.
+                            Aumente sua visibilidade, conquiste novos clientes e expanda seus negócios 24 horas por dia, 7 dias por semana.
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-auto tw-w-[350px] sm:tw-w-full tw-flex-col tw-gap-4 tw-p-4 tw-text-center tw-items-center tw-justify-center"
+                    >
+                        <i class="bi bi-chat-dots-fill tw-text-5xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Typebot</h3>
+                        <div class="tw-text-gray-300">
+                            Com o Typebot, você consegue configurar fluxos de conversa que simulam um diálogo humano e conduzem os clientes por jornadas predefinidas,
+                            como atendimento ao cliente, coleta de feedback, qualificação de leads, entre outros.
+                        </div>
+                    </div>
+                    
+                    <div
+                        class="reveal-up tw-flex tw-h-auto tw-w-[350px] sm:tw-w-full tw-flex-col tw-gap-4 tw-p-4 tw-text-center tw-items-center tw-justify-center"
+                    >
+                        <i class="bi bi-camera-video-fill tw-text-5xl sm:tw-text-4xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Criação e edição de vídeos</h3>
+                        <div class="tw-text-gray-300">
+                            "Transforme suas ideias em conteúdos impactantes e visuais com serviços profissionais de criação e edição de vídeos,
+                            garantindo que sua mensagem alcance o público certo com qualidade e criatividade."
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    
+                    <!--<div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                         <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> 
+                        <i
+                             class="bi bi-rocket-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 5</h3>
+                        <div class="tw-text-gray-300">
+                            Vídeos bem produzidos e editados elevam o nível da sua empresa,
+                            transmitindo credibilidade e engajando clientes. Na Alta Conversão, transformamos suas ideias em vídeos que vendem mais!"
+                        </div>
+                    </div> 
+                    
+                    
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                         <img src="./assets/images/home/sample.jpg" 
+                            alt="feature1"> 
+                        <i class="bi bi-fire tw-text-5xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 6</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="./assets/images/home/profissional.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Profissional de Mídia Social</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Engajamento e Relacionamento com o Público
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Um bom social media interage com os seguidores, respondendo dúvidas, curtindo comentários e promovendo conversas.
+                            Essa proximidade aumenta a confiança dos clientes na marca e cria um senso de comunidade em torno dela. Com o social media cuidando desse relacionamento,
+                            a sua marca se torna mais acessível e humana aos olhos dos clientes.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Aumento de Visibilidade e Credibilidade da Marca
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Um profissional de mídia social sabe como posicionar a marca de maneira atraente e interessante, o que ajuda a fortalecer sua credibilidade online.
+                            Um perfil bem administrado e engajado passa uma imagem confiável e aumenta a percepção de valor da marca, fazendo com que as pessoas vejam a empresa como autoridade no seu segmento.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Criação e Edição de Vídeos</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Atração e Retenção de Clientes nas Redes Sociais
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Com o aumento do consumo de vídeos nas redes sociais, ter um videomaker na equipe permite criar conteúdos visualmente impactantes e envolventes. Esses vídeos chamam mais atenção do público e aumentam o engajamento,
+                            especialmente se forem dinâmicos e bem editados. Com isso, a marca se destaca e se torna mais memorável para quem acompanha.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Personalidade e Identidade de Marca
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            O videomaker pode ajudar a construir uma identidade visual para o seu negócio que seja marcante e transmita a essência da sua loja. Ele pode explorar o ambiente, a decoração e os valores da marca,
+                            criando uma narrativa visual que ajuda a fixar a identidade da loja na mente dos clientes. Isso é muito importante para a diferenciação em um mercado competitivo.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="./assets/images/home/insights.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+
+        <!--Typebot-->
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="./assets/images/home/typebot01.jpg"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Typebot para uma empresa</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Automação do Atendimento ao Cliente
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            O Typebot permite que uma empresa responda a perguntas frequentes automaticamente, oferecendo um atendimento rápido e disponível 24/7.
+                            Isso reduz o tempo gasto por atendentes em questões repetitivas, permitindo que eles se concentrem em interações mais complexas.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Coleta de Feedback e Satisfação do Cliente
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Com o Typebot, é possível fazer pesquisas de satisfação (NPS, CSAT) e coletar feedback dos clientes após uma interação.
+                            Esse retorno é essencial para ajustes e melhorias no serviço ou produto oferecido.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-min-h-[100vh] tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl"
+            >
+            Transforme seu negócio com um site profissional
+            </h3>
+            <!-- Testimonials -->
+            <div
+                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                        
+                        <i class="bi bi-building tw-text-5xl tw-text-primary"></i>
+
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Institucional</div>
+                           <!-- <div class="tw-text-gray-400">AMI, ceo</div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4  tw-text-gray-300">
+                        É recomendado para empresas que querem aumentar sua presença digital e deixar sua marca em evidência.
+                        Exibe as informações sobre a empresa, sua história e fundação, os produtos e serviços de maneira clara e funcional. Para empresas grandes ou
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                        <i class="bi bi-file-earmark-richtext tw-text-5xl tw-text-primary"></i>
+                        
+                    </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Landing Page</div>
+                           <!-- <div class="tw-text-gray-400">ABC, cto</div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Este tipo de site estimula uma única ação predeterminada para criar conexão com o usuário e levá-lo a uma ação, como por exemplo a conversão seja em compras,
+                        leads, atendimento no WhatsApp, etc.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+
+                        <i class="bi bi-bag-fill tw-text-5xl tw-text-primary"></i>
+
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Loja</div>
+                          <!--  <div class="tw-text-gray-400">xyz, cto</div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Site para vendas on-line, direciona o usuário a compra de um produto ou serviço de forma prática.
+                        Com uma loja on-line sua empresa tem mais oportunidade de crescimento, reduz os custos, proporciona praticidade na hora da compra, comodidade na entrega.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+
+                        <i class="bi bi-file-earmark tw-text-5xl tw-text-primary"></i>
+
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">One Page</div>
+                            <!-- <div class="tw-text-gray-400">xz, cto</div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        É uma página única, um site mais básico e direto. Possui links para a mesma página.
+                        As informações ficam organizadas uma abaixo da outra. Ótimo para quem não tem muito conteúdo.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            
+                        <i class="bi bi-link-45deg tw-text-5xl tw-text-primary"></i>
+
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Página de Links</div>
+                            <!-- <div class="tw-text-gray-400">app, cto</div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Este site organiza todas as suas redes sociais e sites em uma única página. Assim seus clientes tem fácil acesso ao que estão procurando.
+                        Torna suas conversões e conexões mais práticas e organizadas.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+
+                        <i class="bi bi-newspaper tw-text-5xl tw-text-primary"></i>
+
+
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Portal/Blog</div>
+                           <!-- <div class="tw-text-gray-400"> 
+                                marketplace, cto
+                            </div> -->
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Serve para empresas que tem uma estratégia de marketing de conteúdo. É voltado para a publicação de artigos ou notícias,
+                        além disso ajuda a interagir melhor com seu público alvo gerando confiança. A longo prazo ajuda no ranqueamento do Google.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]"
+            id="pricing"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl"
+            >
+            "Eleve sua marca com serviços que geram resultados"
+            </h3>
+            <!-- pricing -->
+            <div
+                class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+            >
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+
+                        <i class="bi bi-pen tw-text-3xl tw-text-primary"></i>
+
+                        <span class="tw-text-2xl tw-font-semibold">Copywriting</span>
+                        <!-- <span class="tw-text-2xl tw-text-gray-400">/mo</span> -->
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        O copy do seu site elaborado pela Angência Alta Conversão é focado em engajar, atrair e converter,
+                        sendo feito a partir de planejamento, palavras-chave e otimização SEO.Textos de alta conversão!
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Um copywriting bem elaborado melhora a visibilidade do site no Google porque:</li>
+                        <li>1. Usa palavras-chave que o público busca;</li>
+                        <li>2. Cria conteúdo relevante e de qualidade;</li>
+                        <li>3. Aumenta o tempo que o usuário passa na página;</li>
+                        <li>4. Gera mais compartilhamentos e links de outros sites;</li>
+                        <li>5. Organiza o conteúdo para ser fácil de ler.</li>
+                    </ul>
+                    
+                   <!-- <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a> -->
+
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-bg-[#1d2127] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <i class="bi bi-palette tw-text-5xl tw-text-primary"></i>
+
+                        <span class="tw-text-2xl tw-font-semibold">Posts seguindo a sua identidade</span>
+                       <!-- <span class="tw-text-2xl tw-text-gray-400">/mo</span> -->
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Criar posts seguindo a identidade da marca é essencial para construir uma conexão forte e consistente com o público. Aqui estão as principais razões:!
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>1. Tornar a marca reconhecível;</li>
+                        <li>2. Construir confiança e credibilidade;</li>
+                        <li>3. Atrair o público ideal;</li>
+                        <li>4. Destacar a marca da concorrência;</li>
+                        <li>5. Manter uma comunicação coerente.</li>
+                    </ul>
+                    <!-- <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a> -->
+                </div>
+                <div
+                
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <i class="bi bi-bar-chart-fill tw-text-5xl tw-text-primary"></i>
+
+                        <span class="tw-text-2xl tw-font-semibold">Gerenciamos suas campanhas no google ads e meta ads</span>
+                       <!-- <span class="tw-text-2xl tw-text-gray-400">/mo</span> -->
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Gerenciar campanhas no Google Ads e Meta Ads é uma maneira poderosa de impulsionar os resultados dos clientes,
+                        alcançando o público certo em plataformas estratégicas e maximizando o retorno sobre o investimento em anúncios.
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>1. Aumentar o alcance;</li>
+                        <li>2. Otimizar o retorno do investimento;</li>
+                        <li>3. Alcançar o público certo;</li>
+                        <li>4. Aplicar nossa expertise estratégica;</li>
+                        <li>5. Fornecer relatórios claros.</li>
+                    </ul>
+                    <!-- <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+        >
+            <h3
+                class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+            >
+            Alguns trabalhos ✨
+            </h3>
+            <!-- pricing -->
+            <div
+                class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+            >
+                <a
+                    href=""
+                    class="tw-flex tw-h-[600px] tw-w-[250px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src="./assets/images/home/criativo.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            srcset=""
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                        Arte criativo
+                    </h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        A arte criativa se destaca no feed e pode captar a atenção rapidamente, aumentando as chances de engajamento.
+                    </p>
+                    
+                    <!-- <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span> -->
+                </a>
+                <a href="#" class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[900px]" id="imageLink1">
+                    <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                        <img
+                            src="./assets/images/home/langpage01.png"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            id="image1"
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">Landing Page</h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        A criação de uma landing page para um produto específico ajuda a maximizar a conversão, personalizar a experiência do usuário, e focar em um objetivo claro,
+                        além de permitir otimizações constantes e segmentação precisa do público. Com ela, você tem a chance de vender mais e melhor!
+                    </p>
+                    <span>
+
+                     <!--   <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span> -->
+                </a>
+                
+                <a href="#" class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]" id="imageLink2">
+                    <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                        <img
+                            src="./assets/images/home/Institucional_psicologa.png"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            id="image2"
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">Institucional Psicologa</h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        Diferente de um site institucional genérico, a landing page pode ser projetada com foco total em conversões, ou seja,
+                        no agendamento de consultas ou no contato direto com você.
+                    </p>
+
+                   <!-- <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i> -->
+                    </span>
+                </a>
+                
+                <!-- Modal para exibir a imagem em tamanho completo -->
+                <div id="imageModal" class="modal hidden">
+                    <div class="modal-content">
+                        <span id="close" class="close">&times;</span>
+                        <img id="modalImage" class="modal-image" />
+                    </div>
+                </div>
+                
+                <!-- CSS para o Modal -->
+                <style>
+                    /* Estilos do modal */
+                    .modal {
+                        display: none; /* Oculto por padrão */
+                        position: fixed;
+                        z-index: 1;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0,0,0,0.8);
+                    }
+                
+                    .modal-content {
+                        position: relative;
+                        margin: auto;
+                        padding: 20px;
+                        width: 80%;
+                        max-width: 700px;
+                    }
+                
+                    .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 25px;
+                        color: white;
+                        font-size: 35px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                
+                    .modal-image {
+                        width: 100%;
+                        height: auto;
+                    }
+                </style>
+                
+                <!-- JavaScript para abrir o modal -->
+                <script>
+                    // Abre o modal e exibe a imagem
+                    function openModal(imageId) {
+                        const modal = document.getElementById('imageModal');
+                        const modalImage = document.getElementById('modalImage');
+                        const image = document.getElementById(imageId);
+                        modal.style.display = 'block';
+                        modalImage.src = image.src; // Define o src da imagem do modal
+                    }
+                
+                    // Fecha o modal
+                    const closeButton = document.getElementById('close');
+                    closeButton.addEventListener('click', function() {
+                        document.getElementById('imageModal').style.display = 'none';
+                    });
+                
+                    // Fecha o modal se o usuário clicar fora da imagem
+                    window.onclick = function(event) {
+                        const modal = document.getElementById('imageModal');
+                        if (event.target === modal) {
+                            modal.style.display = 'none';
+                        }
+                    };
+                
+                    // Adiciona eventos de clique nas imagens para abrir o modal
+                    document.getElementById('imageLink1').addEventListener('click', function(event) {
+                        event.preventDefault(); // Impede o link de redirecionar
+                        openModal('image1');
+                    });
+                
+                    document.getElementById('imageLink2').addEventListener('click', function(event) {
+                        event.preventDefault(); // Impede o link de redirecionar
+                        openModal('image2');
+                    });
+                </script>
+                
+        </section>
+
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+        >
+            <div
+                class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
+            >
+                <h2 class="tw-text-2xl tw-text-primary max-md:tw-text-xl">
+                    "Alta Conversão: sua agência parceira para transformar cada clique em clientes e resultados reais!"
+                </h2>
+                <h2 class="tw-text-xl max-md:tw-text-lg">
+                    Faça a melhor escolha para o seu negôcio
+                </h2>
+
+               <!--  <div
+                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full tw-p-2 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <a
+                        class="btn tw-transition-colors tw-duration-[0.3s]"
+                        href=""
+                    >
+                        Signup
+                    </a> 
+                </div> -->
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+                <div>
+                    Centro, Cachoeirinha
+                    <br />
+                   Segunda à sexta,
+                    <br />
+                    09:00 às 17:00
+                </div>
+                <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/@pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/"
+                        class="tw-h-[40px] tw-w-[40px]"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Soluções</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Criação de posts</a>
+                    <a href="" class="footer-link">Criação de websites</a>
+                    <a href="" class="footer-link">Gestão de Tráfego</a>
+                    <a href="" class="footer-link">Edição e Criação de Videos</a>
+                    <!-- <a href="" class="footer-link">Privacy policy</a> -->
+                </div>
+            </div>
+        </footer>
+
+        <div class="whats">
+            <a href="https://wa.me/5551996758436?text=Olá, gostei do seu trabalho, gostaria de tirar algumas dúvidas" target="_blank">
+            <!-- <img src="./assets/images/home/sample.jpg" -->
+            <img src="./assets/images/home/whatsapp1.png" width="50" alt="Fale conosco pelo whatsApp" title="Fale conosco pelo whatsApp" />
+
+        </a>
+        </div>
+        <footer class="tw-text-center tw-py-6 tw-bg-gray-800 tw-text-white tw-mt-10">
+            <p>&copy; 2024 Alta Conversão. <a href="/politica-de-privacidade" class="tw-text-primary hover:tw-text-gray-300">Política de privacidade</a></p>
+            <p>Razão Social: Agência Alta Conversão | CNPJ: 58.040.920/0001-13</p>
+          </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
